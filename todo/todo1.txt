@@ -1,0 +1,62 @@
+/*
+ * todo1.txt
+ *
+ * Created: 08/10/2018 06:45:26 PM
+ *  Author: Ramy badr
+ */ 
+
+Build: 
+- MCAL:
+	- Register Acess class
+		-functions take : register || address
+		-write : byte , bit , range , mask
+		-read : byte , bit , range , mask
+		-toggle : byte , bit , range , mask
+	- timer
+	- uart 
+	- I2C
+- OS :
+	- basic co-operative schedule
+- App
+	- apps platform
+Modify:
+- Framework:
+	-naming conventions : 
+		- folders :
+			- current :
+				- Apreviation : CAPS ex : LED, LCD, ..
+				- names : small
+			- modify :
+				- unified cases for all 
+		- files : .h,.c , tests, configs
+		- macros : 
+			- General :MACRO_NAME 
+			- Test : TEST_FILENAME
+		- functions : CLASS_FunctionName(arg1_name,..)
+		- structs : ClassName
+		- Vars : varName
+	- structure : 
+
+- HAL:
+	- change config hirarchy, implementation: 
+		- test file calls config file
+		- config file creates required components
+		- init function takes array arguments of configured ports
+	- 
+
+- plan : 
+	- adding new component :
+		- MCAL : 
+			- apply basic functionality using DIO in , test them in a new test file
+			- create new class (struct,funcs) for the new items 
+			- map incremintly new functionalties in the created test file
+			- test all functions created.
+			- preserve same config till test ends
+		- HAL :
+			- 
+			- 
+			- 
+		- OS : 
+			- 
+			- 
+			- 
